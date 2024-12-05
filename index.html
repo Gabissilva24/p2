@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante XYZ</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Barra de navegação -->
+        <header class="row bg-dark text-white p-3">
+            <nav class="col-12">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Início</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Cardápio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <main class="row">
+            <!-- Coluna para imagem de destaque -->
+            <section class="col-md-6 p-3">
+                <img src="imagem-destaque.jpg" alt="Imagem do Restaurante" class="img-fluid">
+            </section>
+
+            <!-- Coluna para texto de boas-vindas -->
+            <section class="col-md-6 p-3">
+                <h1>Bem-vindo ao Restaurante XYZ</h1>
+                <p>Desfrute de uma experiência gastronômica única.</p>
+            </section>
+        </main>
+
+        <!-- Tabela de Horários -->
+        <section class="row">
+            <div class="col-12 p-3">
+                <h2>Horários de Funcionamento</h2>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda a Sexta</td>
+                            <td>12:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td>18:00 - 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>Domingo</td>
+                            <td>Fechado</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Formulário de Contato -->
+        <section class="row">
+            <div class="col-12 p-3">
+                <h2>Contato</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua dúvida ou sugestão"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
